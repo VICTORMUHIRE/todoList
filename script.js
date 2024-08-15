@@ -20,6 +20,29 @@ pushButton.addEventListener("click", function () {
             </div> 
             
         `;
+
+        // Delete button a task
+        var deleteButtons = document.querySelectorAll(".delete");
+
+        for (let button of deleteButtons) {           
+            button.addEventListener("click",function(){
+                this.parentNode.remove();
+            })
+        }
+
+        //add compleated class to a task
+        let tasks = document.querySelectorAll(".task");
+
+        for (let task of tasks) {
+            task.addEventListener("click", function(){
+                this.classList.toggle("completed");
+            })
+        }
+
+        input.value=""
     }
 
 })
+
+
+

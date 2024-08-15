@@ -89,8 +89,7 @@ body{
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 2px #d1d3d4;
- 
-    cursor: pointer;
+
     span{
         font-size: 1rem;
         font-weight: 400;
@@ -110,4 +109,7 @@ body{
           fill : white;
         }
     }
+}
+.completed{
+    text-decoration: line-through;
 }
